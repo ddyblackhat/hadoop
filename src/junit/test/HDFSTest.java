@@ -13,6 +13,8 @@ public class HDFSTest {
 		System.out.println(b);
 	}
 	
+	
+	
 	@Test
 	public void listStatiesTest(){
 		HDFSUtils.listStaties("/");
