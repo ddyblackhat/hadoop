@@ -31,7 +31,10 @@ public class WordCountRunner {
 		
 		// wcjob要使用的哪个mapper类
 		wcjob.setMapperClass(WordCountMapper.class);
-		wcjob.setReducerClass(WordCountReduce.class);
+		wcjob.setReducerClass(WordCountReducer.class);
+		// 设置 combinerClass
+		wcjob.setCombinerClass(WordCountReducer.class);
+		
 		
 		wcjob.setMapOutputKeyClass(Text.class);
 		wcjob.setMapOutputValueClass(LongWritable.class);
