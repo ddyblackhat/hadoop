@@ -14,10 +14,11 @@ public class HDFSTest {
 	}
 	
 	
-	
 	@Test
 	public void listStatiesTest(){
-		HDFSUtils.listStaties("/");
+		System.out.println(465+357+460+584);
 	}
 
+	
+	
 }
